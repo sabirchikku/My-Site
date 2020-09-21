@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>My Website</title>
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: 'Ubuntu', sans-serif;}
+        
+        body, html {
+          height: 100%;
+          line-height: 1.8;
+        }
+        
+        /* Full height image header */
+        .bgimg-1 {
+          background-position: center;
+          background-size: cover;
+          background-image: url("libry.jpg");
+          min-height: 100%;
+        }
+        
+        .w3-bar .w3-button {
+          padding: 16px;
+        }
+        </style>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="LOG.png" alt=""></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+        <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+        
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+    
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+    <!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+      <span class="w3-jumbo w3-hide-small">Shape Your Future With </span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Execellence and Morality</span><br>
+      <span class="w3-large w3-jumbo">Execellence and Morality.</span>
+      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+    </div> 
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      
+    </div>
+  </header>
+  <div class="w3-row-padding w3-margin-top"></div>
+
+        <div class="w3-third">
+        <div class="w3-card">
+        <img src="https://scontent.fccj1-1.fna.fbcdn.net/v/t1.0-9/102818654_3274315622631408_29343070537383936_o.jpg?_nc_cat=111&_nc_sid=730e14&_nc_ohc=eqShR-4lf_8AX-Y_mw_&_nc_ht=scontent.fccj1-1.fna&oh=9ee9e23829ce600cce8b9981ac56c017&oe=5F8CE3AD" style="width:100%">
+        <div class="w3-container">
+        <h4>Brochure</h4>
+        </div>
+        </div>
+        </div>
+        
+        <div class="w3-third">
+        <div class="w3-card">
+        <img src="https://scontent.fccj1-1.fna.fbcdn.net/v/t1.0-9/119087271_3554916587904642_8300675972549769482_o.jpg?_nc_cat=103&_nc_sid=8bfeb9&_nc_ohc=BMyvAaI-sP8AX8d0C7z&_nc_ht=scontent.fccj1-1.fna&oh=802a37b8a612017fe2ab6eb6e33d4e0c&oe=5F8D4EB2" style="width:100%">
+        <div class="w3-container">
+        <h4>New Leaders</h4>
+        </div>
+        </div>
+        </div>
+        
+        <div class="w3-third">
+        <div class="w3-card">
+        <img src="https://scontent.fccj1-1.fna.fbcdn.net/v/t1.0-9/106395981_3349177061811930_8979483066123774472_n.jpg?_nc_cat=106&_nc_sid=730e14&_nc_ohc=ZeF6Uyy-pGoAX8qZ4U-&_nc_ht=scontent.fccj1-1.fna&oh=bd625a569d1b31419315d3452cdbc3e3&oe=5F8AD38E" style="width:100%">
+        <div class="w3-container">
+        <h4>Successfull</h4>
+        </div>
+        </div>
+        </div>
+  <div class="w3-container">
+      <div class="w3-half w3-container w3-padding-48">
+          <h2>
+              We Making Something Speacial for Your
+          </h2>
+          <button class="w3-btn w3-button w3-indigo">
+            <a class="link" href="https://www.facebook.com/ashariyya/" target="_blank">Connect to Facebook</a>
+          </button>
+          
+      </div>
+      <div class="w3-half w3 container w3-padding-48">
+          <h3>What Do We Do</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+      </div>
+      
+  </div>
+  <div class="w3-panel w3-text-grey">
+    <h4>MOST RECENT WORK:</h4>
+    </div>
+    <div class="w3-row">
+    <div class="w3-half w3-container">
+      <img src="https://scontent.fccj1-1.fna.fbcdn.net/v/t1.0-9/101809436_3282602905136013_694581136531692313_o.jpg?_nc_cat=107&_nc_sid=730e14&_nc_ohc=9EbStuhD_qMAX_J8FsW&_nc_ht=scontent.fccj1-1.fna&oh=5bee9d58a7d6bb08d5f0a9a35d050964&oe=5F8AA4D7" style="width:100%">
+      <p class="w3-xlarge w3-text-grey">
+        Demos, Logos, Reports, Names, Events, Media, Wordpress, Google, Books, Optimisations</p>
+   
+    </div>
+    <div class="w3-half w3-container">
+      <img src="https://scontent.fccj1-1.fna.fbcdn.net/v/t1.0-9/105629185_3348154555247514_1708653320046404619_o.jpg?_nc_cat=103&_nc_sid=8bfeb9&_nc_ohc=dfGXNkum6aYAX9scj3h&_nc_ht=scontent.fccj1-1.fna&oh=f5139646e8b53d16508e8e58b86bec63&oe=5F8CC683" style="width:100%">
+      
+    </div>
+    </div>
+    
+<form id="submit-form" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+    <h2 class="w3-center">Contact Us</h2>
+     
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+        <div class="w3-rest">
+          <input class="w3-input w3-border" name="First Name" type="text" placeholder="First Name">
+        </div>
+    </div>
+    
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+        <div class="w3-rest">
+          <input class="w3-input w3-border" name="Last Name" type="text" placeholder="Last Name">
+        </div>
+    </div>
+    
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+        <div class="w3-rest">
+          <input class="w3-input w3-border" name="Email " type="text" placeholder="Email">
+        </div>
+    </div>
+    
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+        <div class="w3-rest">
+          <input class="w3-input w3-border" name="Phone" type="text" placeholder="Phone">
+        </div>
+    </div>
+    
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+        <div class="w3-rest">
+          <input class="w3-input w3-border" name="message" type="text" placeholder="Message">
+        </div>
+    </div>
+    
+    <p class="w3-center">
+    <button class="w3-button w3-section w3-blue w3-ripple"> Submit </button>
+    </p>
+    </form>
+    
+      
+        
+
+    
+
+
+
+
+
+    <footer class="w3-container w3-grey w3-text-white w3-center w3-margin-top">
+        <p>Find me on social media.</p>
+       <a href="https://www.facebook.com/ashariyya/" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://instagram.com/ashariyya_dawa_official?igshid=5rqy1k6667rq" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <p>Designed By <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Ash'ashariyya_dawa</p>
+      </footer>
+
+      
+    
+    
+
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+          var captionText = document.getElementById("caption");
+          captionText.innerHTML = element.alt;
+        }
+        
+        
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+        
+        function w3_open() {
+          if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+          } else {
+            mySidebar.style.display = 'block';
+          }
+        }
+        
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+        </script>
+      <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbyyODDUyoYvXra6EthkWXH8M6itaMrS4fwFfjFzrQ/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("FORM SUBMITTED SUCCESSFULLY")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>  
+</body>
+</html>
